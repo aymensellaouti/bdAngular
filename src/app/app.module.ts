@@ -6,12 +6,24 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
+import { PereComponent } from './pere/pere.component';
+import { FilsComponent } from './fils/fils.component';
+import { DetailComponent } from './cv/detail/detail.component';
+import { ItemComponent } from './cv/item/item.component';
+import { ListComponent } from './cv/list/list.component';
+import { CvComponent } from './cv/cv/cv.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    CardComponent
+    CardComponent,
+    PereComponent,
+    FilsComponent,
+    DetailComponent,
+    ItemComponent,
+    ListComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
