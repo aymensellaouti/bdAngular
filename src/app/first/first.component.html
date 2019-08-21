@@ -1,0 +1,16 @@
+<p (click)="disable()">
+  first works!
+</p>
+
+<input
+    [(ngModel)]="couleur"
+    type="text"
+    [disabled]="show"
+>
+<div [style.backgroundColor]="couleur">
+  Mon Div
+</div>
+
+<input type="text" [(ngModel)]="two">
+
+{{two}}
