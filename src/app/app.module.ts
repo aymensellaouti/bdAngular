@@ -12,6 +12,10 @@ import { DetailComponent } from './cv/detail/detail.component';
 import { ItemComponent } from './cv/item/item.component';
 import { ListComponent } from './cv/list/list.component';
 import { CvComponent } from './cv/cv/cv.component';
+import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
+import { MiniwordComponent } from './directives/miniword/miniword.component';
+import { HighlightDirective } from './directives/highlight.directive';
+import { RainbowDirective } from './directives/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { CvComponent } from './cv/cv/cv.component';
     DetailComponent,
     ItemComponent,
     ListComponent,
-    CvComponent
+    CvComponent,
+    NgstyleComponent,
+    MiniwordComponent,
+    HighlightDirective,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,
