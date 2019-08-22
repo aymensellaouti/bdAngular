@@ -1,6 +1,6 @@
 <li class="list-group-item" (click)="sendItemData()">
   <img
-    src="assets/images/{{personne.path}}"
+    src="assets/images/{{personne.path|defaultImage}}"
     height="50px"
     width="50px"
     alt="{{personne.firstname}} {{personne.name}}"
