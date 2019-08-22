@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-md-6 col-sm-3">
-    <app-list></app-list>
+    <app-list (itemDataEvent)="getSelectedItem($event)"></app-list>
   </div>
 
   <div class="col-md-6 col-sm-9">
-    <app-detail></app-detail>
+    <app-detail [personne]="selectedPersonne"></app-detail>
   </div>
 </div>
