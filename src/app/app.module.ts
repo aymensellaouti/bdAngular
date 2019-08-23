@@ -21,6 +21,7 @@ import { TodoComponent } from './todo/todo.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { CvDetailComponent } from './cv/cv-detail/cv-detail.component';
+import { NotFound404Component } from './not-found404/not-found404.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CvDetailComponent } from './cv/cv-detail/cv-detail.component';
     TodoComponent,
     HeaderComponent,
     RouterSimulatorComponent,
-    CvDetailComponent
+    CvDetailComponent,
+    NotFound404Component
   ],
   imports: [
     BrowserModule,
