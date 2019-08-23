@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CvComponent} from './cv/cv/cv.component';
 import {TodoComponent} from './todo/todo.component';
+import {MiniwordComponent} from './directives/miniword/miniword.component';
 
 const routes: Routes = [
   {path: 'cv', component: CvComponent},
-  {path: 'todo', component: TodoComponent}
+  {path: 'todo', component: TodoComponent},
+  {path: 'word', component: MiniwordComponent},
 ];
 
 @NgModule({
