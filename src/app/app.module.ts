@@ -22,6 +22,10 @@ import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { CvDetailComponent } from './cv/cv-detail/cv-detail.component';
 import { NotFound404Component } from './not-found404/not-found404.component';
+import { LoginComponent } from './login/login.component';
+import { ObservableComponent } from './observable/observable.component';
+import {HttpClientModule} from '@angular/common/http';
+import { HttpComponent } from './http/http.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +47,16 @@ import { NotFound404Component } from './not-found404/not-found404.component';
     HeaderComponent,
     RouterSimulatorComponent,
     CvDetailComponent,
-    NotFound404Component
+    NotFound404Component,
+    LoginComponent,
+    ObservableComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

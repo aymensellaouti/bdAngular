@@ -14,7 +14,15 @@ export class ListComponent implements OnInit {
   ) { }
   @Output() itemDataEvent = new EventEmitter();
   ngOnInit() {
-    this.personnes = this.cvService.getPersonnes();
+    this.cvService.getPersonnes().subscribe(
+      (personnes) => {
+        this.personnes = personnes;
+      },
+      (error) => {
+        this.personnes = this.cvService.getFakePersonnes();
+        alert('Fake Data please contact admin');
+      }
+    );
   }
   treatItemData(personne: Personne) {
     this.itemDataEvent.emit(

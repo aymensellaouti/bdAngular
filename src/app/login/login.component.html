@@ -1,0 +1,28 @@
+<form #formulaire = "ngForm">
+  <label for="email" >
+    Email
+  </label>
+  <input
+    type="text"
+    id="email"
+    class="form-control"
+    required email ngModel
+    name="email"
+    #email="ngModel"
+  >
+  <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
+    Veuillez saisir un email valid
+  </div>
+  <label for="password" >
+    Password
+  </label>
+  <input
+    #password="ngModel"
+    type="password" minlength="4" required id="password" class="form-control" ngModel name="password">
+
+  <div *ngIf="password.invalid && password.touched" class="alert alert-danger">
+    Veuillez saisir un password dont la taille dépasse 3 caractères
+  </div><button [disabled]="formulaire.invalid" class="btn btn-dark" (click)="login(formulaire)">
+    Login
+  </button>
+</form>

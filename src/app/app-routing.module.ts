@@ -5,6 +5,7 @@ import {TodoComponent} from './todo/todo.component';
 import {NotFound404Component} from './not-found404/not-found404.component';
 import {MiniwordComponent} from './directives/miniword/miniword.component';
 import {CvDetailComponent} from './cv/cv-detail/cv-detail.component';
+import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {path: 'cv', children: [
@@ -12,6 +13,7 @@ const routes: Routes = [
       {path: ':id', component: CvDetailComponent},
     ]},
   {path: 'todo', component: TodoComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'word', component: MiniwordComponent},
   {path: '**', component: NotFound404Component}
 ];
